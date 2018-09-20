@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BinaryTree.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerList.cs" />
+    <Compile Include="IAccount.cs" />
+    <Compile Include="ICustomList.cs" />
+    <Compile Include="ITree.cs" />
+    <Compile Include="OverDrawnEventArgs.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Shapes.cs" />
     <Compile Include="Test.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

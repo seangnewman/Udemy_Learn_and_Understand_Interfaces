@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Shapes;
+ 
 
 namespace Udemy_Learn_and_Understand_Interfaces
 {
@@ -12,7 +13,13 @@ namespace Udemy_Learn_and_Understand_Interfaces
         int Width { get; set; }
         int Height { get; set; }
         Rectangle Bounds { get; }
-        bool isHighlighted { set; }
+        bool IsHighlighted { set; }
+
+        void Draw(Graphics gr);
+
+
+        //Define an event
+        event EventHandler Moved;
 
     }
 }

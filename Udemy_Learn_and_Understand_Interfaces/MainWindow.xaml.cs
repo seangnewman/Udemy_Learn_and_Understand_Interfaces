@@ -24,5 +24,15 @@ namespace Udemy_Learn_and_Understand_Interfaces
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //ICustomList list = new CustomerList();
+            //Customer rod = list["Rod", "Stephens"];
+
+            ITree<Person> personTree = new BinaryTree();
+            List<Person> children = personTree.GetChildren(null);
+            string result = personTree.DoSomething<string>();
+        }
     }
 }
